@@ -8,7 +8,8 @@ renamed as (
         NAME as name,
         SIGNUP_DATE as signup_date,
         LOAD_DTS as load_dts,
-        current_timestamp() as last_model_run
+        current_timestamp() as last_model_run,
+        'hello_world' as hello_world
     from source
 )
 select * from renamed
